@@ -34,6 +34,7 @@ class Runner:
 
     def get_full_report_path(self, suffix):
         all_reports = utils.get_ctest_surefire_report(self.module)
+        # print(all_reports)
         for report in all_reports:
                 if report.endswith(suffix):
                     return report
@@ -102,21 +103,24 @@ class Runner:
                 assert line.split(" ")[0] == "[CTEST][GET-PARAM]"
                 assert line.count(" ") == 1, "more than one whitespace in " + line
                 param_name = line.split(" ")[1]
+                # print(param_name)
                 if param_name in self.params:
-                    is_getter = True 
+                    is_getter = True
+                    print(param_name)
                     self.getter_record.write(method + " " + param_name + "\n")
                     self.getter_record.flush()
             elif "[CTEST][SET-PARAM]" in line:
                 line = line[line.find("[CTEST][SET-PARAM]"):]
                 assert line.startswith("[CTEST][SET-PARAM] "), "wrong line: " + line
                 assert line.split(" ")[0] == "[CTEST][SET-PARAM]"
-                assert line.count(" ") == 2, "more than one whitespace in " + line
+                assert line.count(" ") == 1, "more than one whitespace in " + line
                 param_name = line.split(" ")[1]
                 if param_name in self.params:
-                    if self.aggressive or self.setInTest(line.split(" ")[2]):
-                        is_setter = True
-                        self.setter_record.write(method + " " + param_name + "\n")
-                        self.setter_record.flush()
+                    # if self.aggressive or self.setInTest(line.split(" ")[2]):
+                    is_setter = True
+                    print(param_name)
+                    self.setter_record.write(method + " " + param_name + "\n")
+                    self.setter_record.flush()
 
         if is_getter or is_setter:
             if is_getter:
@@ -189,6 +193,7 @@ class Runner:
 
             class_name = method.split("#")[0]
             suffix_filename_to_check = class_name + "-output.txt"
+            print(suffix_filename_to_check)
             full_path = self.get_full_report_path(suffix_filename_to_check)
             if full_path == "none":
                 print("no report for " + method)

@@ -1,0 +1,27 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] ------------------------------------------------------------------------
+[[1;34mINFO[m] Detecting the operating system and CPU architecture
+[[1;34mINFO[m] ------------------------------------------------------------------------
+[[1;34mINFO[m] os.detected.name: linux
+[[1;34mINFO[m] os.detected.arch: x86_64
+[[1;34mINFO[m] os.detected.version: 5.4
+[[1;34mINFO[m] os.detected.version.major: 5
+[[1;34mINFO[m] os.detected.version.minor: 4
+[[1;34mINFO[m] os.detected.release: ubuntu
+[[1;34mINFO[m] os.detected.release.version: 20.04
+[[1;34mINFO[m] os.detected.release.like.ubuntu: true
+[[1;34mINFO[m] os.detected.release.like.debian: true
+[[1;34mINFO[m] os.detected.classifier: linux-x86_64
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------< [0;36morg.apache.hadoop:hadoop-common[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding Apache Hadoop Common 3.4.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0-M1:test[m [1m(default-cli)[m @ [36mhadoop-common[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  1.640 s
+[[1;34mINFO[m] Finished at: 2022-10-10T13:24:17-05:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

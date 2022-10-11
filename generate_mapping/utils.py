@@ -19,6 +19,10 @@ def get_default_params_from_file(module):
     ret = set()
     for line in open(constant.LOCAL_CONF_PATH[module]).readlines():
         ret.add(line.strip())
+    #     print(line.strip())
+    
+    # print("org.apache.shenyu.common.config.ShenyuConfig.SharedPool.keepalivetime" in ret)
+
     return ret
 
 
