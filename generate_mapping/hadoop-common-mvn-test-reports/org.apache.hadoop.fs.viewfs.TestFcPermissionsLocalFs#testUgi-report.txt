@@ -1,7 +1,0 @@
-2022-10-10 13:58:20,907 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(60)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2022-10-10 13:58:20,997 INFO  util.log (Log.java:initialized(169)) - Logging initialized @678ms to org.eclipse.jetty.util.log.Slf4jLog
-2022-10-10 13:58:20,997 INFO  util.log (ViewFsTestSetup.java:linkUpFirstComponents(136)) - Added link for test dir /home->file:///home
-2022-10-10 13:58:20,998 INFO  util.log (ViewFsTestSetup.java:linkUpFirstComponents(136)) - Added link for home dir /home->file:///home
-2022-10-10 13:58:20,998 INFO  util.log (ViewFsTestSetup.java:setUpHomeDir(120)) - Home dir base for viewfs/home
-2022-10-10 13:58:20,998 INFO  util.log (ViewFsTestSetup.java:linkUpFirstComponents(136)) - Added link for working dir /home->file:///home
-2022-10-10 13:58:21,008 INFO  util.log (ViewFsTestSetup.java:setupForViewFsLocalFs(90)) - Working dir is: viewfs:/home/kejiawu2/project/hadoop/hadoop-common-project/hadoop-common

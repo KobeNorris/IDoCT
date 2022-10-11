@@ -12,31 +12,31 @@
     "org.apache.shenyu.common.config.ShenyuConfig.fallback"
   ],
   "org.apache.shenyu.common.config.ShenyuConfigTest#testExtPlugin": [
-    "org.apache.shenyu.common.config.ShenyuConfig.ExtPlugin.scheduletime",
-    "org.apache.shenyu.common.config.ShenyuConfig.extplugin"
+    "org.apache.shenyu.common.config.ShenyuConfig.extplugin",
+    "org.apache.shenyu.common.config.ShenyuConfig.ExtPlugin.scheduletime"
   ],
   "org.apache.shenyu.common.config.ShenyuConfigTest#testShenyuConfig": [
-    "org.apache.shenyu.common.config.ShenyuConfig.websocket",
-    "org.apache.shenyu.common.config.ShenyuConfig.upstreamcheck",
-    "org.apache.shenyu.common.config.ShenyuConfig.scheduler",
-    "org.apache.shenyu.common.config.ShenyuConfig.switchconfig",
-    "org.apache.shenyu.common.config.ShenyuConfig.instance",
-    "org.apache.shenyu.common.config.ShenyuConfig.local",
-    "org.apache.shenyu.common.config.ShenyuConfig.extplugin",
     "org.apache.shenyu.common.config.ShenyuConfig.cross",
     "org.apache.shenyu.common.config.ShenyuConfig.fallback",
-    "org.apache.shenyu.common.config.ShenyuConfig.exclude",
-    "org.apache.shenyu.common.config.ShenyuConfig.file",
-    "org.apache.shenyu.common.config.ShenyuConfig.sharedpool",
     "org.apache.shenyu.common.config.ShenyuConfig.ribbon",
-    "org.apache.shenyu.common.config.ShenyuConfig.metrics"
+    "org.apache.shenyu.common.config.ShenyuConfig.switchconfig",
+    "org.apache.shenyu.common.config.ShenyuConfig.local",
+    "org.apache.shenyu.common.config.ShenyuConfig.sharedpool",
+    "org.apache.shenyu.common.config.ShenyuConfig.websocket",
+    "org.apache.shenyu.common.config.ShenyuConfig.metrics",
+    "org.apache.shenyu.common.config.ShenyuConfig.extplugin",
+    "org.apache.shenyu.common.config.ShenyuConfig.upstreamcheck",
+    "org.apache.shenyu.common.config.ShenyuConfig.scheduler",
+    "org.apache.shenyu.common.config.ShenyuConfig.file",
+    "org.apache.shenyu.common.config.ShenyuConfig.instance",
+    "org.apache.shenyu.common.config.ShenyuConfig.exclude"
   ],
   "org.apache.shenyu.common.config.ShenyuConfigTest#testWebsocketConfig": [
     "org.apache.shenyu.common.config.ShenyuConfig.websocket"
   ],
   "org.apache.shenyu.common.config.ShenyuConfigTest#testCrossFilterConfig": [
-    "org.apache.shenyu.common.config.ShenyuConfig.CrossFilterConfig.allowedorigin",
-    "org.apache.shenyu.common.config.ShenyuConfig.cross"
+    "org.apache.shenyu.common.config.ShenyuConfig.cross",
+    "org.apache.shenyu.common.config.ShenyuConfig.CrossFilterConfig.allowedorigin"
   ],
   "org.apache.shenyu.common.config.ShenyuConfigTest#testScheduler": [
     "org.apache.shenyu.common.config.ShenyuConfig.scheduler"
