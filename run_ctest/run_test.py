@@ -28,7 +28,11 @@ def run_test_batch(param_values, associated_test_map):
     for index, group in enumerate(param_test_group):
         # # do injection for different test group and chdir for testing everytime
         tested_params, tests = group
+        # print(INJECTION_PATH[SYCOMMON])
         inject_config({p: param_values[p] for p in tested_params})
+        return tr
+
+
         print(">>>>[ctest_core] running group {} where {} params shares {} ctests".format(index, len(tested_params), len(tests)))
         test_str = run_test_utils.join_test_string(tests)
         os.chdir(testing_dir)
