@@ -30,7 +30,6 @@ def test_conf_file(test_input, ctestname):
     associated_test_map = {p: [ctestname] for p in params if p in mapping[ctestname]}
     print(">>>>[ctest_core] # parameters associated with the run: {}".format(len(params)))
     tr = run_test_batch(test_input, associated_test_map)
-    return
     tup = tr.ran_tests_and_time.pop()
     test, _ = tup.split("\t")
     if test in tr.failed_tests:
