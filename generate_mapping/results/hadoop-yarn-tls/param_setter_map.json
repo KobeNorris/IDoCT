@@ -1,0 +1,154 @@
+{
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestPerNodeTimelineCollectorsAuxService#testRemoveApplicationNonAMContainer": [
+    "hadoop.http.filter.initializers",
+    "bind.address",
+    "type",
+    "yarn.timeline-service.enabled",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.app-collector.linger-period.ms",
+    "delegation-token.token-kind",
+    "cookie.path",
+    "yarn.timeline-service.writer.class",
+    "simple.anonymous.allowed"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestPerNodeTimelineCollectorsAuxService#testRemoveApplication": [
+    "hadoop.http.filter.initializers",
+    "bind.address",
+    "type",
+    "yarn.timeline-service.enabled",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.app-collector.linger-period.ms",
+    "delegation-token.token-kind",
+    "cookie.path",
+    "yarn.timeline-service.writer.class",
+    "simple.anonymous.allowed"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestPerNodeTimelineCollectorsAuxService#testRemoveAppWhenSecondAttemptAMCotainerIsLaunchedSameNode": [
+    "hadoop.http.filter.initializers",
+    "bind.address",
+    "type",
+    "yarn.timeline-service.enabled",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.app-collector.linger-period.ms",
+    "delegation-token.token-kind",
+    "cookie.path",
+    "yarn.timeline-service.writer.class",
+    "simple.anonymous.allowed"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestPerNodeTimelineCollectorsAuxService#testAddApplication": [
+    "hadoop.http.filter.initializers",
+    "bind.address",
+    "type",
+    "yarn.timeline-service.enabled",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.app-collector.linger-period.ms",
+    "delegation-token.token-kind",
+    "cookie.path",
+    "yarn.timeline-service.writer.class",
+    "simple.anonymous.allowed"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestPerNodeTimelineCollectorsAuxService#testLaunch": [
+    "hadoop.http.filter.initializers",
+    "bind.address",
+    "type",
+    "yarn.timeline-service.enabled",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.app-collector.linger-period.ms",
+    "delegation-token.token-kind",
+    "cookie.path",
+    "yarn.timeline-service.writer.class",
+    "simple.anonymous.allowed"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestPerNodeTimelineCollectorsAuxService#testAddApplicationNonAMContainer": [
+    "hadoop.http.filter.initializers",
+    "bind.address",
+    "type",
+    "yarn.timeline-service.enabled",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.app-collector.linger-period.ms",
+    "delegation-token.token-kind",
+    "cookie.path",
+    "yarn.timeline-service.writer.class",
+    "simple.anonymous.allowed"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestTimelineCollector#testAsyncEntityDiscard": [
+    "yarn.timeline-service.writer.async.queue.capacity"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestTimelineCollectorManager#testTimelineCollectorManagerWithInvalidTimelineWriter": [
+    "yarn.timeline-service.writer.class"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestTimelineCollectorManager#testTimelineCollectorManagerWithFileSystemWriter": [
+    "yarn.timeline-service.writer.class"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.collector.TestTimelineCollectorManager#testTimelineCollectorManagerWithNonexistentTimelineWriter": [
+    "yarn.timeline-service.writer.class"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.reader.TestTimelineReaderServer#testTimelineReaderServerWithNonexistentTimelineReader": [
+    "yarn.timeline-service.reader.class",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.reader.webapp.address",
+    "yarn.timeline-service.enabled"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.reader.TestTimelineReaderServer#testTimelineReaderServerWithInvalidTimelineReader": [
+    "yarn.timeline-service.reader.class",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.reader.webapp.address",
+    "yarn.timeline-service.enabled"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.reader.TestTimelineReaderServer#testStartStopServer": [
+    "hadoop.http.filter.initializers",
+    "bind.address",
+    "yarn.timeline-service.enabled",
+    "yarn.timeline-service.version",
+    "yarn.timeline-service.reader.class",
+    "yarn.timeline-service.reader.webapp.address"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.reader.TestTimelineReaderWebServicesBasicAcl#testTimelineReaderManagerAclsWhenDisabled": [
+    "yarn.acl.enable",
+    "yarn.admin.acl"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.reader.TestTimelineReaderWebServicesBasicAcl#testTimelineReaderManagerAclsWhenEnabled": [
+    "yarn.acl.enable",
+    "yarn.webapp.filter-entity-list-by-user",
+    "yarn.admin.acl"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetEntityDefaultView": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetEntityCustomFields": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetEntitiesByTimeWindows": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetEntitiesWithLimit": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetAllEntities": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testAppFlowMappingCsv": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetEntityAllFields": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetEntityByClusterAndApp": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetFilteredEntities": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineReaderImpl#testGetEntitiesByRelations": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineWriterImpl#testWriteEntityToFile": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineWriterImpl#testWriteMultipleEntities": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ],
+  "org.apache.hadoop.yarn.server.timelineservice.storage.TestFileSystemTimelineWriterImpl#testWriteEntitiesWithEmptyFlowName": [
+    "yarn.timeline-service.fs-writer.root-dir"
+  ]
+}
