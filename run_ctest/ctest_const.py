@@ -8,6 +8,7 @@ GEN_CTEST_DIR = os.path.join(CUR_DIR, "generate_ctest")
 RUN_CTEST_DIR = os.path.join(CUR_DIR, "run_ctest")
 
 HCOMMON = "hadoop-common"
+HYARNTLS = "hadoop-yarn-tls"
 HDFS = "hadoop-hdfs"
 HBASE = "hbase-server"
 ZOOKEEPER = "zookeeper-server"
@@ -16,6 +17,7 @@ SYCOMMON = "shenyu-common"
 
 CTEST_HADOOP_DIR = os.path.join(APP_DIR, "hadoop")
 CTEST_HBASE_DIR = os.path.join(APP_DIR, "ctest-hbase")
+CTEST_HYARNTLS_DIR = os.path.join(APP_DIR, "hadoop")
 CTEST_ZK_DIR = os.path.join(APP_DIR, "ctest-zookeeper")
 CTEST_ALLUXIO_DIR = os.path.join(APP_DIR, "ctest-alluxio")
 CTEST_SYCOMMON_DIR = os.path.join(APP_DIR, "shenyu")
@@ -23,6 +25,7 @@ CTEST_SYCOMMON_DIR = os.path.join(APP_DIR, "shenyu")
 PROJECT_DIR = {
     HCOMMON: CTEST_HADOOP_DIR,
     HDFS: CTEST_HADOOP_DIR,
+    HYARNTLS: CTEST_HYARNTLS_DIR,
     HBASE: CTEST_HBASE_DIR,
     ZOOKEEPER: CTEST_ZK_DIR,
     ALLUXIO: CTEST_ALLUXIO_DIR,
@@ -34,6 +37,7 @@ PROJECT_DIR = {
 MODULE_SUBDIR = {
     HCOMMON: "hadoop-common-project/hadoop-common",
     HDFS: "hadoop-hdfs-project/hadoop-hdfs",
+    HYARNTLS: "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-timelineservice",
     HBASE: "hbase-server",
     ZOOKEEPER: "zookeeper-server",
     ALLUXIO: "core",
@@ -51,6 +55,7 @@ SUREFIRE_DIR = {
     HCOMMON: [os.path.join(CTEST_HADOOP_DIR, MODULE_SUBDIR[HCOMMON], SUREFIRE_SUBDIR)],
     HDFS: [os.path.join(CTEST_HADOOP_DIR, MODULE_SUBDIR[HDFS], SUREFIRE_SUBDIR)],
     HBASE: [os.path.join(CTEST_HBASE_DIR, MODULE_SUBDIR[HBASE], SUREFIRE_SUBDIR)],
+    HYARNTLS: [os.path.join(CTEST_HYARNTLS_DIR, MODULE_SUBDIR[HYARNTLS], SUREFIRE_SUBDIR)],
     ZOOKEEPER: [os.path.join(CTEST_ZK_DIR, MODULE_SUBDIR[ZOOKEEPER], SUREFIRE_SUBDIR)],
     ALLUXIO: [
         os.path.join(CTEST_ALLUXIO_DIR, MODULE_SUBDIR[ALLUXIO], "base", SUREFIRE_SUBDIR),
@@ -77,6 +82,7 @@ DEPRECATE_CONF_FILE = {
 
 DEFAULT_CONF_FILE = {
     HCOMMON: os.path.join(DEFAULT_CONF_DIR, HCOMMON + "-default.tsv"),
+    HYARNTLS: os.path.join(DEFAULT_CONF_DIR, HCOMMON + "-default.tsv"),
     HDFS: os.path.join(DEFAULT_CONF_DIR, HDFS + "-default.tsv"),
     HBASE: os.path.join(DEFAULT_CONF_DIR, HBASE + "-default.tsv"),
     ALLUXIO: os.path.join(DEFAULT_CONF_DIR, ALLUXIO + "-default.tsv"),
@@ -88,6 +94,10 @@ DEFAULT_CONF_FILE = {
 INJECTION_PATH = {
     HCOMMON: [
         os.path.join(CTEST_HADOOP_DIR, "hadoop-common-project/hadoop-common/target/classes/core-ctest.xml")
+    ],
+    HYARNTLS: [
+        os.path.join(CTEST_HADOOP_DIR, "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-timelineservice/target/classes/core-ctest.xml")
+        # os.path.join(CTEST_HADOOP_DIR, "hadoop-yarn-project/hadoop-yarn/conf/core-ctest.xml")
     ],
     HDFS: [
         os.path.join(CTEST_HADOOP_DIR, "hadoop-hdfs-project/hadoop-hdfs/target/classes/core-ctest.xml"),

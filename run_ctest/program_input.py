@@ -5,13 +5,13 @@ p_input = {
     "run_mode": "run_ctest", # string
     # name of the project, i.e. hadoop-common, hadoop-hdfs
     # "project": "hadoop-common", # string
-    "project": "shenyu-common", # string
+    "project": "hadoop-yarn-tls",
     # path to param -> tests json mapping
     # "mapping_path": "../generate_mapping/results/hadoop-common/param_unset_getter_map.json", # string
-    "mapping_path": "../generate_mapping/results/shenyu-common/param_unset_getter_map.json", # string
+    "mapping_path": "../generate_mapping/results/hadoop-yarn-tls/param_unset_getter_map.json",
     # input directory hosting configuration files to be test, target-project-format specific
     # "conf_file_dir": "sample-hadoop-common", # string
-    "conf_file_dir": "sample-shenyu-common", # string
+    "conf_file_dir": "sample-hadoop-common",
     # display the terminal output live, without saving any results
     "display_mode": False, # bool
     # whether to use mvn test or mvn surefire:test

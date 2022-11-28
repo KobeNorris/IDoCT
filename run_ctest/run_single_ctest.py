@@ -9,6 +9,9 @@ project = p_input["project"]
 mapping = parse_mapping(p_input["mapping_path"])
 from run_test import run_test_batch
 
+# org.apache.hadoop.crypto.TestCryptoStreams#testAvailable hadoop.security.crypto.cipher.suite=AES/CTR/NoPadding
+
+
 def main(argv):
     print(">>>>[ctest_core] running project {}".format(project))
     s = time.time()
@@ -19,6 +22,7 @@ def main(argv):
         param = argv[i][0:equal_index]
         value = argv[i][equal_index + 1:]
         param_value_dict[param] = value
+        print(param + " " + value)
     # test_input = extract_conf_diff_from_pair(param_value_dict)
     test_input = param_value_dict
     test_conf_file(test_input, ctestname)
